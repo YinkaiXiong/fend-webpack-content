@@ -8,9 +8,7 @@ app.use(express.static('src/client'))
 
 console.log(__dirname)
 
-app.get('/', function (req, res) {
-    res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
-})
+
 
 // designates what port the app will listen to for incoming requests
 app.listen(8080, function () {
